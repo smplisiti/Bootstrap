@@ -35,7 +35,8 @@
                 <!--Task 3-->
                 <div class="col">
                     <a data-scroll href="#numCampers" class="btn btn-lg btn-info text-white mt-4 col-md-last"
-                        id="reserveForm" role="button">Reserve a Campsite</a>
+                        id="reserveForm" role="button" data-toggle="tooltip" data-placement="bottom" data-html="true" 
+                        title="Or call us at<br/><strong>1-206-555-1234</strong>">Reserve a Campsite</a>
                 </div>
             </div>
         </div>
@@ -199,6 +200,12 @@
                 src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
             <script>
                 var scroll = new SmoothScroll('a[href*="#"]');
+            </script>
+            <script>
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                 })
+ 
             </script>
 </body>
 
