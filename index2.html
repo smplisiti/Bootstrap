@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
+
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
@@ -18,56 +19,100 @@
 </head>
 
 <body>
+
     <header class="jumbotron jumbotron-fluid">
+        <div class="col-md-4 col-xl-2 col-xs-12 tm-4">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/logo.png" class="img-fluid" />
-                 </div>
-  
+                </div>
                 <div class="col">
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-<<<<<<< Updated upstream
-=======
-                <!-- workshop 3 task 1-->
-                <div class="col col-md-4 col-xl-2">
-                    <a role="btton" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
-                </div>
-                <!--workshop 2 task 3
+                <!--Task 1-->
                 <div class="col">
-                    <a data-scroll href="#numCampers" class="btn btn-lg btn-info text-white mt-4 col-md-last"
-                        id="reserveForm" role="button" data-toggle="tooltip" data-placement="bottom" data-html="true"
-                        title="Or call us at<br/><strong>1-206-555-1234</strong>">Reserve a Campsite</a>
-                </div> --->
->>>>>>> Stashed changes
+                    <a class="btn btn-lg btn-info text-white mt-4 col-md-last" data-toggle="modal" data-target="#reserveModal"
+                        id="reserveModal" role="button">Reserve a Campsite</a>
+                </div>
             </div>
         </div>
     </header>
+   <!-- Task 2 -->
+  
+  
+  
+   <div id="reserveModal" class="modal fade" role="dialog">
+    <div id="reserveModal" class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
 
+    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+        <form id="reserveForm">
+        <div class="form-group row">
+            <label for="numCampers" class="col-sm-6 col-form-label">Number of
+                Campers</label>
+            <div class="col">
+                <select name="numCampers" id="numCampers" class="form-control">
+                    <option selected>Select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+        </div>
+      
+      
+     <div class="form-group row">
+            <label for="date" class="col-sm-6 col-form-label">Date</label>
+            <div class="col-12 col-sm-6">
+                <input type="date" class="form-control" id="date" name="date"
+                    placeholder="Date" />
+            </div>
+        </div>
+       
+       <!-- task 3-->
+        <div class="form-group-row">
+            <div class="col btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="col-sm-6 col-form-label">Campsite Type</label>
+           
+            <label class="btn btn-success active">
+                <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked>Tent
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="siteType" id="siteRv" autocomplete="off">Rv
+              </label>
+           
+           </div>
+             
+           </div>
+       
+       
+        <div class="form-group row">
+            <div class="col">
+                <button type="button" class="btn btn-secondary" class="close" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary">Reserve</button>
+               
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+</div>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-<<<<<<< Updated upstream
-            <a class="navbar-brand" href="#"> <img src="img/logo.png" height="30" width="30" /> </a>  
-
-        <button class="navbar-toggler" type="button"
-        data-toggle="collapse" data-target="#nucampNavbar">
-           <span class="navbar-toggler-icon" ></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nucampNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link"
-                href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                <li class="nav-item"><a class="nav-link"
-                href="aboutUs.html"><i class="fa fa-info fa-lg"></i>About</a></li>
-                <li class="nav-item"><a class="nav-link" 
-                href="#"><i class="fa fa-info fa-lg"></i>Sites</a></li>
-                <li class="nav-item"><a class="nav-link"
-                href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
-            </ul>
-=======
             <a class="navbar-brand" href="#"> <img src="img/logo.png" height="30" width="30" /> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -86,42 +131,11 @@
                     <a role="button" data-toggle="modal" data-target="#loginModal">
                         <i class="fa fa-sign-in"></i> Login</a>
                 </span>
+
             </div>
->>>>>>> Stashed changes
         </div>
-      </div>
     </nav>
-<<<<<<< Updated upstream
 
-     <div class="container">
-         <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
-             <div class="col">
-                <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
-                <div class="media-body align-self-center">
-                    <h3>Our Campsites</h3>
-                    <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-                </div>
-            </div>
-        </div>
-    
-
-        <div class="container">
-            <div class="row row-content align-items-center">
-               <div class="col-sm-4 col-md-3">   
-                <h2>Featured Campsites</h2>
-    </div>
-    <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the 
-               pristine React Lake is a favorite for fly fishers.</p>
-             </div>
-        </div>
-    </div>
-
-=======
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -152,7 +166,7 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                 <!---->               <button type="button" class="btn btn-secondary btn-sm ml-auto"
                                     data-dismiss="modal">Cancel</button>
                                 <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
                             </div>
@@ -162,8 +176,11 @@
             </div>
         </div>
     </div>
->>>>>>> Stashed changes
+
+
+
     <div class="container">
+
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
                 <div id="homeCarousel" class="carousel slide" data-ride="carousel">
@@ -172,6 +189,8 @@
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
                         <li data-target="#homeCarousel" data-slide-to="2"></li>
                     </ol>
+
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="img/breadcrumb-trail.jpg"
@@ -197,7 +216,9 @@
                                 <h3>Chrome River Campground</h3>
                                 <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy
                                     of old-growth firs at this enchanting spot by the Chrome River.</p>
+
                             </div>
+
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
@@ -213,59 +234,26 @@
         </div>
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Our Community Partners</h2>
+                <h2 class="text-sm-right">Discover & Review</h2>
             </div>
-             <div class="col">
+            <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail " src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
+                        alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
-                        <h3>Bootstrap Outfitters</h3>
-        				<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                        <h3>Our Campsites</h3>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                            own reviews!</p>
                     </div>
                 </div>
-<<<<<<< Updated upstream
-        </div>
-    </div>
-
-    <footer class="site-footer">
-=======
             </div>
->>>>>>> Stashed changes
+
             <div class="container">
-                <div class="row">
-                    <div class="col-4 col-sm-2 offset-1">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Sites</a></li>
-                            <li><a href="#">Contact</a></li>
-                         </ul>
+                <div class="row row-content align-items-center">
+                    <div class="col-sm-4 order-sm-first col-md-3">
+                        <h2 class="text-sm-left mb-5">Featured Campsites</h2>
                     </div>
-<<<<<<< Updated upstream
-                    <div class="col-6 col-sm-5 text-center">
-                        <h5>Social</h5>
-                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                            
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-                        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
-      
-                    </div>
-                </div>
-            </div>
-    </footer>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-=======
-                    <!--task 1 workshop 2-->
+                    
                     <div class="col">
                         <div class="media">
                             <img class="d-flex ml-3 img-thumbnail order-sm-last " src="img/react-lake-thumb.jpg"
@@ -278,11 +266,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="container">
                         <div class="row row-content align-items-center">
                             <div class="col-sm-4 order-sm-last col-md-3">
                                 <h2 class="text-sm-right">Our Community Partners</h2>
                             </div>
+
                             <div class="col">
                                 <div class="media">
                                     <img class="d-flex mr-3 img-thumbnail " src="img/bootstrap-thumb.png"
@@ -295,47 +285,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!--task 2 workshop 2-->
-                        <div class="row row-content align-items-center">
-                            <div class="col-sm-6 mx-auto">
-                                <div class="card">
-                                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                                    <div class="card-body">
-                                        <form id="reserveForm">
-                                            <div class="form-group row">
-                                                <label for="numCampers" class="col-sm-6 col-form-label">Number of
-                                                    Campers</label>
-                                                <div class="col">
-                                                    <select name="numCampers" id="numCampers" class="form-control">
-                                                        <option selected>Select...</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6">6</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <label for="date" class="col-sm-6 col-form-label">Date</label>
-                                                <div class="col-12 col-sm-6">
-                                                    <input type="date" class="form-control" id="date" name="date"
-                                                        placeholder="Date" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col">
-                                                    <button type="submit" class="btn btn-primary">Reserve</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                        
+                        
+                        
+                    
+                
+
                 <footer class="site-footer">
                     <div class="container">
                         <div class="row">
@@ -358,6 +314,7 @@
                                         class="fa fa-twitter"></i></a>
                                 <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
                                         class="fa fa-youtube"></i></a>
+
                             </div>
                             <div class="col-sm-4 text-center">
                                 <a role="button" class="btn btn-link" href="tel:+12065551234"><i
@@ -379,7 +336,6 @@
                 var scroll = new SmoothScroll('a[href*="#"]');
             </script>
             
->>>>>>> Stashed changes
 </body>
 
 </html>
