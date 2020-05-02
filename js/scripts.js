@@ -21,12 +21,10 @@ $(function() {
 
 $(function(){
     $("#reserveButton").click(function(){
-    console.log("reserveButton")
-        $("#reserveModal").modal("show");
+         $("#reserveModal").modal("show");
     });
 
     $("#loginButton").click(function(){
-        console.log("loginButton")
-        $("#loginModal").modal("show");
+         $("#loginModal").modal("show");
     }) 
 })
